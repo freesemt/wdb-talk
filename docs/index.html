@@ -2,11 +2,23 @@
 <head>
 <meta charset="utf-8">
 <title>WDB Talk Index</title>
+<script id="js-core-min" src="scripts/core-min.js"></script>
+<script id="js-sha256" src="scripts/sha256-min.js"></script>
+<script id="js-checkpw" src="scripts/checkpw.js"></script>
 </head>
 <style type="text/css">
 img.middle { vertical-align: middle; }
 </style>
-<body>
+<body onload="checkPassword('f1543a61b26795e52f61a4662bf06963790ae08cf508d313935ae5af33bb4f4f', false, 'index.html', 'calendar_pw_hash', true)">
+<!-- Password Prompt Modal -->
+<div id="password-prompt-modal" style="display:none;">
+    <div style="position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background-color:white; padding:20px; border:1px solid #ccc; z-index:1000;">
+        <h2>Enter Password</h2>
+        <input type="password" id="password-input" />
+        <button id="submit-button" onclick="submitPassword()">送信</button>
+    </div>
+    <div style="position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:999;"></div>
+</div>
 <pre>
 WDB 面談記録
 
