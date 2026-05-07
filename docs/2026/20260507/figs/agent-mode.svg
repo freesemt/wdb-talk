@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 450" width="280" height="315" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="400" height="450" rx="12" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="200" y="28" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a2e">Agent モード</text>
+  <text x="200" y="46" text-anchor="middle" font-size="13" fill="#555">（自律ループ）</text>
+
+  <!-- ユーザー box -->
+  <rect x="130" y="58" width="140" height="46" rx="10" fill="#4a90d9"/>
+  <text x="200" y="79" text-anchor="middle" font-size="15" font-weight="bold" fill="white">ユーザー</text>
+  <text x="200" y="97" text-anchor="middle" font-size="12" fill="#d0e8ff">タスクを依頼</text>
+
+  <!-- Arrow down to Agent -->
+  <line x1="200" y1="104" x2="200" y2="128" stroke="#888" stroke-width="2"/>
+  <polygon points="200,136 194,123 206,123" fill="#888"/>
+
+  <!-- Agent box -->
+  <rect x="110" y="138" width="180" height="46" rx="10" fill="#6c3483"/>
+  <text x="200" y="159" text-anchor="middle" font-size="15" font-weight="bold" fill="white">Agent</text>
+  <text x="200" y="177" text-anchor="middle" font-size="12" fill="#e8d5f5">計画・判断・実行</text>
+
+  <!-- Loop arrow left side: down from Agent -->
+  <line x1="140" y1="184" x2="140" y2="208" stroke="#e67e22" stroke-width="2"/>
+
+  <!-- Tools box -->
+  <rect x="60" y="210" width="280" height="80" rx="10" fill="#fff" stroke="#e67e22" stroke-width="2"/>
+  <text x="200" y="230" text-anchor="middle" font-size="13" font-weight="bold" fill="#e67e22">ツール群</text>
+  <text x="115" y="252" text-anchor="middle" font-size="12" fill="#333">📄 ファイル読み書き</text>
+  <text x="115" y="270" text-anchor="middle" font-size="12" fill="#333">💻 ターミナル実行</text>
+  <text x="295" y="252" text-anchor="middle" font-size="12" fill="#333">🔍 Web 検索</text>
+  <text x="295" y="270" text-anchor="middle" font-size="12" fill="#333">🧪 テスト実行</text>
+
+  <!-- Loop arrow: up from Tools back to Agent -->
+  <line x1="62" y1="250" x2="40" y2="250" stroke="#e67e22" stroke-width="2"/>
+  <line x1="40" y1="250" x2="40" y2="161" stroke="#e67e22" stroke-width="2"/>
+  <line x1="40" y1="161" x2="110" y2="161" stroke="#e67e22" stroke-width="2"/>
+  <polygon points="110,161 97,155 97,167" fill="#e67e22"/>
+  <text x="18" y="225" font-size="11" fill="#e67e22" transform="rotate(-90,18,225)">観察・再計画</text>
+
+  <!-- Loop label -->
+  <rect x="148" y="302" width="104" height="20" rx="6" fill="#fdebd0"/>
+  <text x="200" y="315" text-anchor="middle" font-size="11" fill="#e67e22" font-weight="bold">← ループ継続 →</text>
+
+  <!-- Completion arrow -->
+  <line x1="200" y1="322" x2="200" y2="350" stroke="#27ae60" stroke-width="2.5"/>
+  <polygon points="200,358 194,345 206,345" fill="#27ae60"/>
+  <text x="228" y="340" font-size="11" fill="#27ae60" font-weight="bold">完了</text>
+
+  <!-- ユーザー box 2 (result) -->
+  <rect x="130" y="360" width="140" height="44" rx="10" fill="#4a90d9"/>
+  <text x="200" y="380" text-anchor="middle" font-size="15" font-weight="bold" fill="white">ユーザー</text>
+  <text x="200" y="398" text-anchor="middle" font-size="12" fill="#d0e8ff">結果を確認</text>
+
+  <!-- Note -->
+  <rect x="30" y="414" width="340" height="30" rx="8" fill="#d5f5e3" stroke="#27ae60" stroke-width="1.2"/>
+  <text x="200" y="433" text-anchor="middle" font-size="12" fill="#1e8449">Agent が自律ループ — 人間は最初と最後だけ</text>
+
+</svg>
